@@ -1,0 +1,17 @@
+#galeria {
+
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+
+    
+}
+
+* {
+
+    background: linear-gradient(green, black);
+    color: #e9eff0;
+    font-size: 1.9rem;
+
+}
