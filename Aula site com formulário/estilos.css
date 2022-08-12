@@ -1,0 +1,141 @@
+* {
+
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Verdana; sans-serif;
+
+}
+
+#container {
+
+    width: 95%;
+    margin: auto;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-weight: 400;
+    border-bottom: 1px solid #e8e8e8;
+
+}
+
+#menu {
+
+    background: linear-gradient(gray,red);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 2px 2px 10px black;
+
+}
+
+#fotoempresa {
+
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 1rem;
+    
+}
+
+#servicos {
+
+    text-align: center;
+
+}
+
+#quemsomos {
+
+    text-align: center;
+
+}
+
+#paragrafo {
+
+    text-align: justify;
+    width: 95%;
+    margin-left: 1rem;
+
+}
+
+#logotipo {
+
+    float: left;
+    
+}
+
+#opcoes {
+
+    float: right;
+    margin-top: 15px;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px 8px 12px;
+    font-size: 1.2rem;
+
+}
+
+input[type="text"], textarea {
+
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    width: 60%;
+
+}
+
+button {
+
+    font-size: 2rem;
+    padding: 4px 10px 4px 10px;
+    border: solid;
+    border-color: white;
+
+}
+
+button:hover {
+
+    border: solid;
+    border-color: black;
+
+}
+
+#rodape {
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background: linear-gradient(gray, red);
+    box-shadow: 2px 2px 10px black;
+    padding: 5px;
+
+}
+
+@media (min-width: 700px) {
+
+    #servicos, #quemsomos, #contato {
+
+        padding-top: 4rem;
+
+    } 
+
+}
