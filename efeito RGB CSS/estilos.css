@@ -1,0 +1,50 @@
+body {
+	background-color: black;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.box {
+
+	position: relative;
+	width: 600px;
+	height: 600px;
+	color: white;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 360px;
+	font: normal 12pt Arial;
+
+}
+
+.box::before, .box::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: calc(100% + 30px);
+	height: calc(100% + 30px);
+	background: linear-gradient(45deg,yellow,blue,violet,red,green,yellow,blue,violet,red,green);
+	background-size: 300%;
+	border-radius: 360px;
+	animation: animaBorda 1s linear infinite;
+}
+
+.box::after {
+	filter: blur(100px);
+
+}
+
+@keyframes animaBorda {
+	0%{
+		background-position: 0;
+	}
+	100%{
+		background-position: 300%;
+
+	}
+}
