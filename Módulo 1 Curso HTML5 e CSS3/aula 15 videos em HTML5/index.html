@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/meuvideo.mp4" width="560" poster="imagens/limao.png" controls></video>
+    <p>Outro exemplo:</p>
+    <video width="560" poster="imagens/limao.png" controls>
+        <source src="midia/meuvideo.m4v" type="video/m4v">
+        <source src="midia/meuvideo.webm" type="video/webm">
+        <p>Seu navgador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Vídeos com hospedagem externa</h1>
+    <p>Esse video está hospedado de forma externa.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uGhXeunMMX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
